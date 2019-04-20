@@ -1,7 +1,7 @@
 {
   "name": "@ask-utils/cli",
   "description": "CLI tools for Alexa Skill development",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.2-alpha.0",
   "author": "hideokamoto @hideokamoto",
   "bin": {
     "ask-dev": "./bin/run",
@@ -9,7 +9,7 @@
   },
   "bugs": "https://github.com/hideokamoto/cli/issues",
   "dependencies": {
-    "@ask-utils/sam-boilerplate": "^0.0.1-alpha.0",
+    "@ask-utils/sam-boilerplate": "^0.0.2-alpha.0",
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",

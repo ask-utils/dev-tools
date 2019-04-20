@@ -1,6 +1,6 @@
 {
   "name": "@ask-utils/sam-boilerplate",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.2-alpha.0",
   "description": "Boilerplate generater for Alexa Skill backend by AWS CDK",
   "keywords": [
     "alexa",
