@@ -54,7 +54,7 @@ export const parseConfig = (config: StackConfig = {}): Config => {
   return Object.assign({}, defaultConfig, config)
 }
 
-export const getStack = (params: StackConfig = {}) => {
+export const generateBoilerplate = (params: StackConfig = {}) => {
   const config = parseConfig(params)
   
   const app = new cdk.App()

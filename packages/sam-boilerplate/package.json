@@ -1,5 +1,5 @@
 {
-  "name": "sam-boilerplate",
+  "name": "@ask-utils/sam-boilerplate",
   "version": "0.0.0",
   "description": "Boilerplate generater for Alexa Skill backend by AWS CDK",
   "keywords": [
@@ -9,7 +9,7 @@
     "lambda",
     "serverless"
   ],
-  "author": "hideokamoto <hide.okamoto@digitalcube.jp>",
+  "author": "Hidetaka Okamoto <info@wp-kyoto.net> (https://wp-kyoto.net)",
   "homepage": "",
   "license": "MIT",
   "main": "dist/index.js",
@@ -21,6 +21,22 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "build": "tsc",
+    "test": "npm run build && npm run jest",
+    "jest": "jest"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-cloudwatch": "^0.28.0",
+    "@aws-cdk/aws-iam": "^0.28.0",
+    "@aws-cdk/aws-logs": "^0.28.0",
+    "@aws-cdk/aws-sam": "^0.28.0",
+    "@aws-cdk/cdk": "^0.28.0",
+    "js-yaml": "^3.13.1"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^3.12.1",
+    "jest": "^24.7.1",
+    "power-assert": "^1.6.1",
+    "typescript": "^3.4.3"
   }
 }
