@@ -1,0 +1,26 @@
+{
+  "name": "sam-boilerplate",
+  "version": "0.0.0",
+  "description": "Boilerplate generater for Alexa Skill backend by AWS CDK",
+  "keywords": [
+    "alexa",
+    "sam",
+    "aws",
+    "lambda",
+    "serverless"
+  ],
+  "author": "hideokamoto <hide.okamoto@digitalcube.jp>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
