@@ -8,6 +8,7 @@
   },
   "bugs": "https://github.com/hideokamoto/cli/issues",
   "dependencies": {
+    "@ask-utils/sam-boilerplate": "^0.0.0",
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
