@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "author": "hideokamoto @hideokamoto",
   "bin": {
-    "cli": "./bin/run"
+    "ask-dev": "./bin/run",
+    "askd": "./bin/run"
   },
   "bugs": "https://github.com/hideokamoto/cli/issues",
   "dependencies": {
@@ -41,7 +42,7 @@
   "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",
-    "bin": "cli",
+    "bin": "ask-dev",
     "plugins": [
       "@oclif/plugin-help"
     ]
