@@ -17,48 +17,51 @@ CLI tools for Alexa Skill development
 <!-- usage -->
 ```sh-session
 $ npm install -g @ask-utils/cli
-$ cli COMMAND
+$ ask-dev COMMAND
 running command...
-$ cli (-v|--version|version)
-@ask-utils/cli/0.0.0 darwin-x64 node-v10.5.0
-$ cli --help [COMMAND]
+$ ask-dev (-v|--version|version)
+@ask-utils/cli/0.0.1-alpha.0 darwin-x64 node-v10.5.0
+$ ask-dev --help [COMMAND]
 USAGE
-  $ cli COMMAND
+  $ ask-dev COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`cli hello [FILE]`](#cli-hello-file)
-* [`cli help [COMMAND]`](#cli-help-command)
+* [`ask-dev generate-sam`](#ask-dev-generate-sam)
+* [`ask-dev help [COMMAND]`](#ask-dev-help-command)
 
-## `cli hello [FILE]`
+## `ask-dev generate-sam`
 
 describe the command here
 
 ```
 USAGE
-  $ cli hello [FILE]
+  $ ask-dev generate-sam
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -d, --dry-run                 dry run
+  -f, --format=(json|yaml|yml)  [default: yaml]
+  -h, --help                    show CLI help
+  -o, --output=output           [default: template] output file name.
+  --db=db                       DynamoDB Tablenames
+  --s3=s3                       s3 bucket names
 
 EXAMPLE
-  $ cli hello
-  hello world from ./src/hello.ts!
+  $ ask-dev generate-sam
+  Create new SAM template
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/hideokamoto/cli/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/generate-sam.ts](https://github.com/hideokamoto/cli/blob/v0.0.1-alpha.0/src/commands/generate-sam.ts)_
 
-## `cli help [COMMAND]`
+## `ask-dev help [COMMAND]`
 
-display help for cli
+display help for ask-dev
 
 ```
 USAGE
-  $ cli help [COMMAND]
+  $ ask-dev help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for
