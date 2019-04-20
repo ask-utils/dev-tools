@@ -38,5 +38,9 @@
     "jest": "^24.7.1",
     "power-assert": "^1.6.1",
     "typescript": "^3.4.3"
+  },
+  "gitHead": "377f5da4f752592ef8e9b86db55129c0628a4f73",
+  "publishConfig": {
+    "access": "public"
   }
 }
