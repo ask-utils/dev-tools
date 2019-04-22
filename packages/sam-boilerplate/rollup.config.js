@@ -10,6 +10,7 @@ export default {
     },
   
     plugins: [
+      nodeResolve({ jsnext: true }),
       typescript(),
       commonjs(),
     ]

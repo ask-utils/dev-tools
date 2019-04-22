@@ -1,5 +1,5 @@
 import * as cdk from '@aws-cdk/cdk';
-import { safeDump } from 'js-yaml'
+import * as yaml from 'js-yaml'
 import BoilerplateStack from './stack'
 
 import {
@@ -10,7 +10,7 @@ import {
 const buildTemplateResponse = (template: {}, format = 'json') => {
   const type = format === 'yaml' ? 'yaml': 'json'
   if (type === 'json') return JSON.stringify(template)
-  return safeDump(template)
+  return yaml.safeDump(template)
 }
 
 export const parseConfig = (config: StackConfig = {}): Config => {
