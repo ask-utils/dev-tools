@@ -21,23 +21,25 @@
     "lib"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "npm run rollup",
     "test": "npm run build && npm run jest",
-    "jest": "jest"
+    "jest": "jest",
+    "tsc": "tsc",
+    "rollup": "rollup -c"
   },
-  "dependencies": {
+  "devDependencies": {
     "@aws-cdk/aws-cloudwatch": "^0.28.0",
     "@aws-cdk/aws-iam": "^0.28.0",
     "@aws-cdk/aws-logs": "^0.28.0",
     "@aws-cdk/aws-sam": "^0.28.0",
     "@aws-cdk/cdk": "^0.28.0",
-    "js-yaml": "^3.13.1"
-  },
-  "devDependencies": {
     "@types/js-yaml": "^3.12.1",
-    "jest": "^24.7.1",
-    "power-assert": "^1.6.1",
-    "typescript": "^3.4.3"
+    "js-yaml": "^3.13.1",
+    "rollup": "^1.10.1",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-typescript2": "^0.20.1",
+    "typescript": "^3.4.4"
   },
   "gitHead": "377f5da4f752592ef8e9b86db55129c0628a4f73",
   "publishConfig": {
