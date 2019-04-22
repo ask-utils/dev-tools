@@ -1,7 +1,7 @@
 import * as cdk from '@aws-cdk/cdk';
 import createLambdaFunction from './modules/lambda'
 import createLogGroup from './modules/logs'
-import { Config, Parameters } from './index'
+import { Config, Parameters } from './model'
 
 export default class BoilerplateStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, config: Config,  props?: cdk.StackProps) {

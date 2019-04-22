@@ -1,7 +1,7 @@
 import * as cdk from '@aws-cdk/cdk';
 import * as SAM from '@aws-cdk/aws-sam'
 import createIAMRole from './iam'
-import { Config, StackProps } from '../index'
+import { Config, StackProps } from '../model'
 
 export default (stack: cdk.Stack, id: string, config: Config, stackProps: StackProps) => {
   const { parameters } = stackProps

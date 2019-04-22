@@ -1,6 +1,6 @@
 import * as cdk from '@aws-cdk/cdk';
-import IAM = require('@aws-cdk/aws-iam')
-import { Config } from '../index'
+import * as IAM from '@aws-cdk/aws-iam'
+import { Config } from '../model'
 
 const getDynamoDBPolicies = (tableNames: string[] = []): IAM.PolicyStatement | null => {
   if (tableNames.length < 1) return null
