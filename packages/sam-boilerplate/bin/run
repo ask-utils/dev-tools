@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+const { writeFileSync } = require('fs')
+const { generateBoilerplate } = require('../dist/index')
+
+const stack = generateBoilerplate()
+writeFileSync('template.yaml', stack)
