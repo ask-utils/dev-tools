@@ -20,7 +20,7 @@ $ npm install -g @ask-utils/cli
 $ ask-dev COMMAND
 running command...
 $ ask-dev (-v|--version|version)
-@ask-utils/cli/0.0.5-alpha.0 darwin-x64 node-v10.5.0
+@ask-utils/cli/0.0.6-alpha.0 darwin-x64 node-v10.5.0
 $ ask-dev --help [COMMAND]
 USAGE
   $ ask-dev COMMAND
@@ -53,7 +53,7 @@ EXAMPLE
   Create new SAM template
 ```
 
-_See code: [src/commands/generate-sam.ts](https://github.com/hideokamoto/cli/blob/v0.0.5-alpha.0/src/commands/generate-sam.ts)_
+_See code: [src/commands/generate-sam.ts](https://github.com/hideokamoto/cli/blob/v0.0.6-alpha.0/src/commands/generate-sam.ts)_
 
 ## `ask-dev help [COMMAND]`
 

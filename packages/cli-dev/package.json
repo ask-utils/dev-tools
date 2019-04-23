@@ -1,6 +1,6 @@
 {
   "name": "cli",
-  "version": "0.0.5-alpha.0",
+  "version": "0.0.6-alpha.0",
   "description": "> TODO: description",
   "author": "hideokamoto <hide.okamoto@digitalcube.jp>",
   "homepage": "https://github.com/ask-utils/dev-tools#readme",
@@ -26,7 +26,7 @@
     "url": "https://github.com/ask-utils/dev-tools/issues"
   },
   "dependencies": {
-    "@ask-utils/sam-boilerplate": "^0.0.5-alpha.0",
+    "@ask-utils/sam-boilerplate": "^0.0.6-alpha.0",
     "@types/node": "^11.13.7",
     "commander": "^2.20.0"
   },
