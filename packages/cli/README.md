@@ -1,3 +1,6 @@
+The package is WIP. Do not use before major release.
+=============
+
 @ask-utils/cli
 ==============
 

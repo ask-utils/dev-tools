@@ -4,6 +4,16 @@ Simply boilerplate for Alexa Skill Backend.
 
 ## Usage
 
+### By CLI
+
+Simple generate boilerplate by following command.
+
+```
+$ npx @ask-utils/sam-boilerplate
+```
+
+### As script
+
 ```javascript
 const { generateBoilerplate } = require('sam-boilerplate');
 

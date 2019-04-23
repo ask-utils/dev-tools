@@ -2,5 +2,10 @@
 const { writeFileSync } = require('fs')
 const { generateBoilerplate } = require('../dist/index')
 
-const stack = generateBoilerplate()
+const stack = generateBoilerplate({
+  format: 'yaml',
+  dbTableNames: ['YOUR_TABLE'],
+  s3BucketNames: ['YOUR_BUCKET']
+})
 writeFileSync('template.yaml', stack)
+console.log('template.yaml has been generated.')
