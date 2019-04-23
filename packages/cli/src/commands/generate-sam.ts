@@ -1,7 +1,7 @@
 import {Command, flags} from '@oclif/command'
 import { writeFileSync } from 'fs'
-import { generateBoilerplate } from '@ask-utils/sam-boilerplate'
 import chalk from 'chalk'
+const { generateBoilerplate } = require('@ask-utils/sam-boilerplate')
 
 export default class Hello extends Command {
   static description = 'describe the command here'
